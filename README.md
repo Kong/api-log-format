@@ -220,10 +220,11 @@ This object describes details about response content *(used in [request](#reques
 | **`size`**        | `Number`  | `required` | Length of the returned content in bytes. *Should be equal to `[request|response].bodySize` if there is no compression and bigger when the content has been compressed*            |
 | **`compression`** | `Number`  | `optional` | Number of bytes saved. Leave out if info is not available                                                                                                                         |
 | **`mimeType`**    | `String`  | `required` | MIME type of the text field. The charset attribute of the MIME type is included (if available)                                                                                    |
-| **`encoding`**    | `String`  | `optional` | Encoding used for the text field e.g `base64`.                                                  |
-| **`text`**        | `String`  | `optional` | The body encoded using the format declared in `encoding`. Leave out if info is not available                                                                                       |
+| **`encoding`**    | `String`  | `optional` | Encoding used for the text field e.g `base64`.                                                                                                                                    |
+| **`text`**        | `String`  | `optional` | The body encoded using the format declared in `encoding`. Leave out if info is not available. Empty string if the information is available, but there is no body or an empty one  |
 
 Note: you should still construct and send `content` object even if not adding the `text` property.
+
 
 ### timings
 
