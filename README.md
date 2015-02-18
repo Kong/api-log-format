@@ -106,7 +106,7 @@ This object represents an array with all exported HTTP requests.
 | --------------------- | --------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **`serverIPAddress`** | `String`  | `optional` | IP address of the server                                                                                                        |
 | **`clientIPAddress`** | `String`  | `optional` | IP address of the client                                                                                                        |
-| **`startedDateTime`** | `String`  | `required` | Date and time stamp for the beginning of the request (ISO 8601 - YYYY-MM-DDThh:mm:ss.sTZD)                                      |
+| **`startedDateTime`** | `String`  | `required` | Date and time stamp for the beginning of the request (ISO 8601 - `YYYY-MM-DDThh:mm:ss.sTZD`)                                      |
 | **`time`**            | `Number`  | `optional` | Total elapsed time of the request in milliseconds. This is the sum of all timings available in the [`timings`](#timings) object |
 | **`request`**         | `Object`  | `required` | An object of type [`request`](#request) that contains info about the request                                                    |
 | **`response`**        | `Object`  | `required` | An object of type [`response`](#response) that contains info about the response                                                 |
