@@ -1,6 +1,6 @@
 # API Log Format (ALF)
 
-**ALF** *(API Log Format)* is a new HTTP logging format based on [**HAR**](http://www.softwareishard.com/blog/har-12-spec/) *(HTTP Archive Format)*. 
+**ALF** *(API Log Format)* is a new HTTP logging format based on [**HAR**][har-spec] *(HTTP Archive Format)*. 
 
 Read the spec below or [skip to the full json example][example].
 
@@ -350,6 +350,7 @@ entry.time = entry.timings.blocked + entry.timings.dns +
 }
 ```
 
+[har-spec]: http://www.softwareishard.com/blog/har-12-spec/ "Har Specification"
 [example]: #full-example "Example ALF Object"
 [message]: #message "Message Object"
 [har]: #har "HAR Object"
