@@ -134,7 +134,7 @@ This object contains detailed info about performed request.
 | **`method`**      | `String`  | `required` | Request method                                                                                                          |
 | **`url`**         | `String`  | `required` | Absolute URL of the request                                                                                             |
 | **`httpVersion`** | `String`  | `required` | Request HTTP Version                                                                                                    |
-| **`queryString`** | [`[QueryString]`][qs] | `optional` | List of query parameter objects                                                                                         |
+| **`queryString`** | [`[QueryString]`][queryString] | `optional` | List of query parameter objects                                                                                         |
 | **`headers`**     | [`[Headers]`][headers] | `required` | List of header objects                                                                                                  |
 | **`headersSize`** | `Number`  | `required` | Total number of bytes from the start of the HTTP request message until (and including) the double CRLF before the body  |
 | **`content`**     | [`Content`][content]  | `optional` | An object containing request body details.                                |
@@ -359,6 +359,6 @@ entry.time = entry.timings.blocked + entry.timings.dns +
 [request]: #request "Request Object"
 [response]: #response "Response Object"
 [headers]: #headers "Headers Object"
-[qs]: #queryString "QueryString Object"
+[queryString]: #queryString "QueryString Object"
 [content]: #content "Content Object"
 [timings]: #timings "Timings Object"
