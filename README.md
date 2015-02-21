@@ -47,12 +47,12 @@ This object represents the root of the JSON message. The object contains the fol
 
 | Name                | Type     | Required   | Description                                                                                             |
 | ------------------- | -------- | ---------- | ------------------------------------------------------------------------------------------------------- |
-| **`serviceToken`**  | `String` | `required` | obtain yours by registering for a free trial at [APIAnalytics.com](http://apianalytics.com)             |
+| **`serviceToken`**  | `String` | `required` | obtain yours by registering for a free trial at [APIAnalytics.com][analytics-url]             |
 | **`har`**           | [`[HAR]`][har] | `required` | An object containing the version, creator, and log entries. |
 
 ### har
 
-A [**HAR**](http://www.softwareishard.com/blog/har-12-spec/) *(HTTP Archive Format)* object.
+A [**HAR**][har-spec] *(HTTP Archive Format)* object.
 
 ```js
 {
@@ -134,7 +134,7 @@ This object contains detailed info about performed request.
 | **`method`**      | `String`  | `required` | Request method                                                                                                          |
 | **`url`**         | `String`  | `required` | Absolute URL of the request                                                                                             |
 | **`httpVersion`** | `String`  | `required` | Request HTTP Version                                                                                                    |
-| **`queryString`** | [`[QueryString]`][queryString] | `optional` | List of query parameter objects                                                                                         |
+| **`queryString`** | [`[QueryString]`][querystring] | `optional` | List of query parameter objects                                                                                         |
 | **`headers`**     | [`[Headers]`][headers] | `required` | List of header objects                                                                                                  |
 | **`headersSize`** | `Number`  | `required` | Total number of bytes from the start of the HTTP request message until (and including) the double CRLF before the body  |
 | **`content`**     | [`Content`][content]  | `optional` | An object containing request body details.                                |
@@ -252,7 +252,7 @@ This object describes various phases within request-response round trip. All tim
 | **`receive`** | `Number` | `required` | Time required to read entire response from the server (or cache)  |
 | **`ssl`**     | `Number` | `optional` | Time required for SSL/TLS negotiation                             |
 
-*The `time` value for the [request object](#request) must be equal to the sum of the timings supplied in this section.*
+*The `time` value for the [request object][request] must be equal to the sum of the timings supplied in this section.*
 
 Following must always be true:
 
@@ -350,6 +350,7 @@ entry.time = entry.timings.blocked + entry.timings.dns +
 }
 ```
 
+[analytics-url]: http://apianalytics.com "API Analytics"
 [har-spec]: http://www.softwareishard.com/blog/har-12-spec/ "Har Specification"
 [example]: #full-example "Example ALF Object"
 [message]: #message "Message Object"
@@ -359,6 +360,6 @@ entry.time = entry.timings.blocked + entry.timings.dns +
 [request]: #request "Request Object"
 [response]: #response "Response Object"
 [headers]: #headers "Headers Object"
-[queryString]: #queryString "QueryString Object"
+[querystring]: #querystring "QueryString Object"
 [content]: #content "Content Object"
 [timings]: #timings "Timings Object"
