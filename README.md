@@ -56,6 +56,20 @@ A [**HAR**][har-spec] *(HTTP Archive Format)* object.
 
 ```js
 {
+  "log": {...}
+}
+```
+
+| Name          | Type           | Required   | Description                                                     |
+| ------------- | -------------- | ---------- | --------------------------------------------------------------- |
+| **`log`**     | [`[Log]`][log] | `required` | An object that represents the root of exported HAR data.        |
+
+### log
+
+An object that represents the root of exported data.
+
+```js
+{
   "version": "1.2",
   "creator": {...},
   "entries": [...]
