@@ -62,7 +62,7 @@ A [**HAR**][har-spec] *(HTTP Archive Format)* object.
 
 | Name          | Type           | Required   | Description                                                     |
 | ------------- | -------------- | ---------- | --------------------------------------------------------------- |
-| **`log`**     | [`[Log]`][log] | `required` | An object that represents the root of exported HAR data.        |
+| **`log`**     | [`[Log]`](#log) | `required` | An object that represents the root of exported HAR data.        |
 
 ### log
 
