@@ -235,7 +235,7 @@ This object describes details about response content *(used in [request][request
 | **`compression`** | `Number`  | `optional` | Number of bytes saved. Leave out if info is not available                                                                                                                         |
 | **`mimeType`**    | `String`  | `required` | MIME type of the text field. By default it should be `application/octet-stream`. Include the charset attribute of the MIME type is included, if available.                                                                                    |
 | **`encoding`**    | `String`  | `optional` | Encoding used for the text field e.g `base64`.                                                                                                                                    |
-| **`text`**        | `String`  | `optional` | The body encoded using the format declared in `encoding`. Leave out if info is not available. Empty string if the information is available, but there is no body or an empty one  |
+| **`text`**        | `String|Null`  | `optional` | The body encoded using the format declared in `encoding`. Leave out or `null` if info is not available. Empty string if the information is available, but there is no body or an empty one  |
 
 Note: you should still construct and send `content` object even if not adding the `text` property.
 
