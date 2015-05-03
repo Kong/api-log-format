@@ -1,6 +1,6 @@
 # API Log Format (ALF)
 
-**ALF** *(API Log Format)* is a new HTTP logging format that utilizes [**HAR**][har-spec] *(HTTP Archive Format)*.
+**ALF** *(API Log Format)* is a new HTTP logging format that utilizes [**HAR**][http://www.softwareishard.com/blog/har-12-spec/] *(HTTP Archive Format)*.
 
 ## Versions
 
