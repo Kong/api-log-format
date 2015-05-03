@@ -4,6 +4,6 @@
 
 ## Versions
 
-- [v1.0.0](versions/1.0.0.md) **(Current)**
-- [v0.0.1](versions/0.0.1.md) *(Deprecated)*
+- [v1.0.0](versions/1.0.0.md) - **Current**
+- [v0.0.1](versions/0.0.1.md) - *Deprecated*
 
