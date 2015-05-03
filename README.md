@@ -7,3 +7,6 @@
 - [v1.0.0](versions/1.0.0.md) - **Current**
 - [v0.0.1](versions/0.0.1.md) - *Deprecated*
 
+### Validation
+
+The official validator is available at [Mashape/alf-validator](https://github.com/Mashape/alf-validator)
