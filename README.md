@@ -10,3 +10,7 @@
 ### Validation
 
 The official validator is available at [Mashape/alf-validator](https://github.com/Mashape/alf-validator)
+
+### Agents
+
+[List of official Agents](https://github.com/Mashape?utf8=%E2%9C%93&query=analytics-agent)
