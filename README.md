@@ -4,9 +4,13 @@ The API Log Format (**ALF**) is a new HTTP logging format that is loosely based 
 
 ## Versions
 
-- [v2.0.0](versions/2.0.0.md) - *Proposed*
+- [v1.1.0](versions/1.1.0.md) - **Proposed**
 - [v1.0.0](versions/1.0.0.md) - **Current**
 - [v0.0.1](versions/0.0.1.md) - *Deprecated*
+
+###### Draft
+
+- [v2.0.0](versions/2.0.0.md) - *Draft*
 
 ## Tools
 
