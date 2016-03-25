@@ -17,8 +17,9 @@ The official validator is available at [Mashape/alf-validator][alf-validator]
 
 ### Analytics
 
-Mashape's [Galileo][galileo] is the Analytics Platform for Monitoring, Visualizing and Inspecting API & Microservice Traffic, utilizes the ALF Format for reporting.
+Mashape's [Galileo][galileo] is the Analytics Platform for Monitoring, Visualizing and Inspecting API & Microservice Traffic, utilizes the ALF Format for reporting HTTP traffic using a variety of [agents][agent-spec].
 
 [alf-validator]: https://github.com/Mashape/alf-validator "Official Validator"
-[har-spec]: http://www.softwareishard.com/blog/har-12-spec/ "Har Specification"
+[agent-spec]: https://github.com/Mashape/galileo-agent-spec
+[har-spec]: https://github.com/ahmadnassri/har-spec "Har Specification"
 [galileo]: https://getgalileo.io/ "Galileo"
